@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GreatingApps</string>
+    <string name="start">START</string>
+    <string name="exit">Exit</string>
+    <string name="unit1">UNIT 1</string>
+    <string name="unit2">UNIT 2</string>
+    <string name="unit3">UNIT 3</string>
+</resources>
