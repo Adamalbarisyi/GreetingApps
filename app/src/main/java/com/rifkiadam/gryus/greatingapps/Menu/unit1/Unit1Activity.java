@@ -17,14 +17,5 @@ public class Unit1Activity extends AppCompatActivity {
         setContentView(R.layout.activity_unit1);
 
 
-        ImageButton imgButton = findViewById(R.id.beranda);
-        imgButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Unit1Activity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
     }
 }
