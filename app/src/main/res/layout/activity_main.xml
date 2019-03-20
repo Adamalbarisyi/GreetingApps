@@ -20,21 +20,23 @@
         android:layout_width="160dp"
         android:layout_height="80dp"
         android:text="@string/start"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="25dp"
         android:textSize="70px"
         android:layout_gravity="center"
         android:textColor="@color/colorWhite"
         android:background="@drawable/button_layout"/>
 
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_layout"
-        android:text="@string/exit"
-        android:textColor="@color/colorWhite"
-        android:textSize="70px" />
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_layout"
+            android:text="@string/exit"
+            android:textColor="@color/colorWhite"
+            android:textSize="70px" />
     </LinearLayout>
 </RelativeLayout>
