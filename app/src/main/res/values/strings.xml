@@ -8,6 +8,8 @@
     <string name="deskripsi">Description</string>
     <string name="definisi">Definition</string>
     <string name="contoh">Example</string>
+    <string name="beranda">Home</string>
+    <string name="soal">Practice Questions</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
