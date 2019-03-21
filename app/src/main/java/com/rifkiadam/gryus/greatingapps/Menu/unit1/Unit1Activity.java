@@ -1,11 +1,6 @@
 package com.rifkiadam.gryus.greatingapps.Menu.unit1;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,7 +47,7 @@ public class Unit1Activity extends AppCompatActivity {
 
             }
         });
-        Button btnDeskripsi = findViewById(R.id.deskripsi);
+        Button btnDeskripsi = findViewById(R.id.greeting_card);
         btnDeskripsi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

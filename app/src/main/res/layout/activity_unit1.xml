@@ -23,20 +23,20 @@
             android:background="@drawable/button_layout"/>
 
         <Button
-            android:id="@+id/deskripsi"
-            android:layout_width="160dp"
-            android:layout_height="80dp"
-            android:text="@string/deskripsi"
-            android:textSize="50px"
-            android:layout_marginTop="20dp"
-            android:textColor="@color/colorWhite"
-            android:background="@drawable/button_layout"/>
-
-        <Button
             android:id="@+id/example"
             android:layout_width="160dp"
             android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_layout"
             android:text="@string/contoh"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+
+        <Button
+            android:id="@+id/greeting_card"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="Greeting Card"
             android:textSize="50px"
             android:layout_marginTop="20dp"
             android:textColor="@color/colorWhite"
