@@ -31,6 +31,22 @@
                 android:text="Practice Questions"
                 android:textColor="#FFFFFF"
                 android:textSize="22dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:text="Read the text carefully to answer questions number 1 and 2."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/textview_border"
+                android:text="To: Father
+Thanks for being my hero! Hope you are always blessed with health and happiness.
+Love ,
+
+Your Son"/>
 
             <TextView
                 android:id="@+id/textView2"
@@ -39,8 +55,8 @@
                 android:layout_below="@+id/button"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_marginTop="38dp"
-                android:text="1. Soal"
+                android:layout_marginTop="158dp"
+                android:text="1. What is the occasion of this card?"
                 android:textSize="18dp" />
 
             <RadioButton
@@ -50,7 +66,7 @@
                 android:layout_below="@+id/textView2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:text=" " />
+                android:text="Mother’s day" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
@@ -59,7 +75,7 @@
                 android:layout_below="@+id/radioButton"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:text="" />
+                android:text="Father’s day" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
@@ -68,7 +84,7 @@
                 android:layout_below="@+id/radioButton2"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:text="" />
+                android:text="Christmas" />
 
             <RadioButton
                 android:id="@+id/radioButton4"
@@ -77,20 +93,71 @@
                 android:layout_below="@+id/radioButton3"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:text="" />
+                android:text="New Year" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="18dp"
+                android:text="2. Why does he send the card? Because he wants to.…"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="congratulate his father" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton5"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="make a moment with his father" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton6"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="celebrate something with his father" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioButton7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="appreciate his father and show his love for him" />
+
+
 
 
             <Button
                 android:id="@+id/button112"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/radioButton3"
+                android:layout_below="@+id/radioButton8"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="135dp"
+                android:layout_marginTop="25dp"
                 android:background="#FF6600"
                 android:text="Jawab" />
 
 
         </RelativeLayout>
+
     </ScrollView>
 </RelativeLayout>
