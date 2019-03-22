@@ -17,29 +17,32 @@
     <Button
         android:id="@+id/unit1"
         android:layout_width="160dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:text="@string/unit1"
         android:textSize="70px"
+        android:layout_marginRight="25dp"
         android:textColor="@color/colorWhite"
         android:background="@drawable/button_layout"/>
 
     <Button
         android:id="@+id/unit2"
         android:layout_width="160dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:text="@string/unit2"
         android:textSize="70px"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
         android:textColor="@color/colorWhite"
         android:background="@drawable/button_layout"/>
 
     <Button
         android:id="@+id/unit3"
         android:layout_width="160dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:text="@string/unit3"
         android:textSize="70px"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
         android:textColor="@color/colorWhite"
         android:background="@drawable/button_layout"/>
 
