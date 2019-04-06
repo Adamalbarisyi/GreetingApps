@@ -7,36 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.rifkiadam.gryus.greatingapps.R;
+import com.rifkiadam.gryus.greatingapps.SecondActivity;
 
 
 public class Unit1Activity extends AppCompatActivity {
-
-//    private SectionsPagerAdapter mSectionsPagerAdapter;
-//
-//    private ViewPager mViewPager;
-//
-//    Fragment definitionFragment;
-//    Fragment descriptionFragment;
-//    Fragment exampleFragment;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit1);
-
-//        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-//        mViewPager = findViewById(R.id.container);
-//        mViewPager.setAdapter(mSectionsPagerAdapter);
-//
-//        TabLayout tabLayout = findViewById(R.id.tabs);
-//
-//        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-//        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
-//
-//        definitionFragment = new DefinitionFragment();
-//        descriptionFragment = new DescriptionFragment();
-//        exampleFragment = new ExampleFragment();
-
 
         Button btnDefinisi = findViewById(R.id.definisi);
         btnDefinisi.setOnClickListener(new View.OnClickListener() {
@@ -65,31 +43,16 @@ public class Unit1Activity extends AppCompatActivity {
 
             }
         });
+        Button btnBack = findViewById(R.id.back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Unit1Activity.this, SecondActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }
 }
-
-//    public class SectionsPagerAdapter extends FragmentPagerAdapter{
-//        public SectionsPagerAdapter(FragmentManager fm){
-//            super(fm);
-//        }
-//
-//        @Override
-//        public Fragment getItem(int position){
-//            if (position ==0){
-//                return definitionFragment;
-//            }else if (position == 1){
-//                return descriptionFragment;
-//            }else if (position == 2){
-//                return exampleFragment;
-//            }
-//            return null;
-//        }
-//
-//        @Override
-//        public int getCount(){
-//            return 3;
-//        }
-////    }
-//}

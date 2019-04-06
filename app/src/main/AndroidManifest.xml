@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu.unit1.ExampleActivity"
-            android:label="@string/contoh"/>
-        <activity android:name=".Menu.unit1.DescribeActivity"
-            android:label="@string/deskripsi"/>
-        <activity android:name=".Menu.unit1.DefinitionActivity"
-            android:label="@string/definisi"/>
+        <activity android:name=".Menu.unit1.HasilSkoringActivity"></activity>
+        <activity
+            android:name=".Menu.unit1.ExampleActivity"
+            android:label="@string/contoh" />
+        <activity
+            android:name=".Menu.unit1.DescribeActivity"
+            android:label="@string/deskripsi" />
+        <activity
+            android:name=".Menu.unit1.DefinitionActivity"
+            android:label="@string/definisi" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
@@ -24,14 +28,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu.unit3.Unit3Activity"
-            android:label="@string/unit3"/>
-        <activity android:name=".Menu.unit2.Unit2Activity"
-            android:label="@string/unit2"/>
-        <activity android:name=".Menu.unit1.Unit1Activity"
-            android:label="@string/unit1"/>
-        <activity android:name=".SecondActivity"
-            android:label="@string/beranda"/>
+        <activity
+            android:name=".Menu.unit3.Unit3Activity"
+            android:label="@string/unit3" />
+        <activity
+            android:name=".Menu.unit2.Unit2Activity"
+            android:label="@string/unit2" />
+        <activity
+            android:name=".Menu.unit1.Unit1Activity"
+            android:label="@string/unit1" />
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/beranda" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

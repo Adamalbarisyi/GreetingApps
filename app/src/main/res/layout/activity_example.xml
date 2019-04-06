@@ -1,183 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFCC"
+    android:background="#86ff94"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Menu.unit1.ExampleActivity">
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="1500dp"
-        android:layout_height="60dp"
+    <LinearLayout
+        android:id="@+id/lineSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#FF6600"
-        android:text="Practice Questions"
-        android:textColor="#FFFFFF"
-        android:textSize="22dp" />
+        android:layout_margin="10dp">
 
-    <ScrollView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKOR : "
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineSoal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp"
+        android:layout_below="@id/lineSkor"
+        android:layout_margin="10dp"
+        android:padding="10dp">
 
-        <RelativeLayout
-            android:id="@+id/soal1"
+        <TextView
+            android:id="@+id/tvSoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linePilihanJawaban"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/lineSoal"
+        android:layout_margin="10dp">
+
+        <RadioGroup
+            android:id="@+id/rgPilihanJawaban"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="80dp"
-                android:text="Read the text carefully to answer questions number 1 and 2." />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"/>
 
-            <TextView
-                android:id="@+id/soalBorder"
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="110dp"
-                android:background="@drawable/textview_border"
-                android:text="@string/soal1"
-                android:paddingLeft="10dp"/>
-
-            <TextView
-                android:id="@+id/tvSoal"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/soalBorder"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginTop="10dp"
-                android:text="1. What is the occasion of this card?"
-                android:textSize="18dp" />
-
-            <RadioGroup
-                android:id="@+id/rg_soal1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tvSoal">
-
-                <RadioButton
-                    android:id="@+id/rb1A"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tvSoal"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginLeft="2dp"
-                    android:text="Mother’s day"
-                    android:onClick="onRadioButton1"/>
-
-                <RadioButton
-                    android:id="@+id/rb1B"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rb1A"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="Father’s day"
-                    android:onClick="onRadioButton1"/>
-
-                <RadioButton
-                    android:id="@+id/rb1C"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rb1B"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="Christmas"
-                    android:onClick="onRadioButton1"/>
-
-                <RadioButton
-                    android:id="@+id/rb1D"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rb1C"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:text="New Year"
-                    android:onClick="onRadioButton1"/>
-            </RadioGroup>
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rg_soal1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginTop="18dp"
-                android:text="@string/soal2"
-                android:textSize="18dp" />
-
-            <RadioGroup
-                android:id="@+id/rg_soal2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView3">
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"/>
 
             <RadioButton
-                android:id="@+id/rb2A"
-                android:layout_width="wrap_content"
+                android:id="@+id/rbPilihanJawaban3"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView4"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:text="congratulate his father"
-                android:onClick="onRadioButton2"/>
-
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"/>
             <RadioButton
-                android:id="@+id/rb2B"
-                android:layout_width="wrap_content"
+                android:id="@+id/rbPilihanJawaban4"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rb2A"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:text="make a moment with his father"
-                android:onClick="onRadioButton2"/>
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"/>
+        </RadioGroup>
+    </LinearLayout>
 
-            <RadioButton
-                android:id="@+id/rb2C"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rb2B"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:text="celebrate something with his father"
-                android:onClick="onRadioButton2"/>
-
-            <RadioButton
-                android:id="@+id/rb2D"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rb2C"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:text="appreciate his father and show his love for him"
-                android:onClick="onRadioButton2"/>
-
-            </RadioGroup>
-            <Button
-                android:id="@+id/btnJawab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rg_soal2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
-                android:background="#FF6600"
-                android:text="Jawab" />
-
-
-        </RelativeLayout>
-
-    </ScrollView>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linePilihanJawaban"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:background="#5ed76c"
+        android:text="SUBMIT"/>
 </RelativeLayout>
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#FFFFCC"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--tools:context=".Menu.unit1.ExampleActivity">-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="1500dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="#FF6600"-->
+        <!--android:text="Practice Questions"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="22dp" />-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/soal1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="80dp"-->
+                <!--android:text="Read the text carefully to answer questions number 1 and 2." />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/soalBorder"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="110dp"-->
+                <!--android:background="@drawable/textview_border"-->
+                <!--android:text="@string/soal1"-->
+                <!--android:paddingLeft="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvSoal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/soalBorder"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="1. What is the occasion of this card?"-->
+                <!--android:textSize="18dp" />-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/rg_soal1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/tvSoal">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb1A"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tvSoal"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginStart="2dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:text="Mother’s day"-->
+                    <!--android:onClick="onRadioButton1"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb1B"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/rb1A"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="Father’s day"-->
+                    <!--android:onClick="onRadioButton1"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb1C"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/rb1B"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="Christmas"-->
+                    <!--android:onClick="onRadioButton1"/>-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb1D"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/rb1C"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:text="New Year"-->
+                    <!--android:onClick="onRadioButton1"/>-->
+            <!--</RadioGroup>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rg_soal1"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:text="@string/soal2"-->
+                <!--android:textSize="18dp" />-->
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/rg_soal2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/textView3">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb2A"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/textView4"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="congratulate his father"-->
+                <!--android:onClick="onRadioButton2"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb2B"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rb2A"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="make a moment with his father"-->
+                <!--android:onClick="onRadioButton2"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb2C"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rb2B"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="celebrate something with his father"-->
+                <!--android:onClick="onRadioButton2"/>-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb2D"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rb2C"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:text="appreciate his father and show his love for him"-->
+                <!--android:onClick="onRadioButton2"/>-->
+
+            <!--</RadioGroup>-->
+            <!--<Button-->
+                <!--android:id="@+id/btnJawab"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rg_soal2"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:background="#FF6600"-->
+                <!--android:text="Jawab" />-->
+
+
+        <!--</RelativeLayout>-->
+
+    <!--</ScrollView>-->
+<!--</RelativeLayout>-->
