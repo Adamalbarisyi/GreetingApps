@@ -23,14 +23,6 @@ public class Unit1Activity extends AppCompatActivity {
                 Intent intent = new Intent(Unit1Activity.this, DefinitionActivity.class);
                 startActivity(intent);
 
-            }
-        });
-        Button btnDeskripsi = findViewById(R.id.greeting_card);
-        btnDeskripsi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Unit1Activity.this, DescribeActivity.class);
-                startActivity(intent);
 
             }
         });
@@ -40,6 +32,16 @@ public class Unit1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Unit1Activity.this, ExampleActivity.class);
                 startActivity(intent);
+
+            }
+        });
+        Button btnDeskripsi = findViewById(R.id.greeting_card);
+        btnDeskripsi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Unit1Activity.this, DescribeActivity.class);
+                startActivity(intent);
+                finish();
 
             }
         });

@@ -23,7 +23,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, Unit1Activity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -33,7 +33,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, Unit2Activity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
@@ -43,7 +43,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondActivity.this, Unit3Activity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
