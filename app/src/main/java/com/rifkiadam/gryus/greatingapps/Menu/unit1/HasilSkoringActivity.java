@@ -23,7 +23,6 @@ public class HasilSkoringActivity extends AppCompatActivity {
 
         mtvHasilAkhir = (TextView) findViewById(R.id.tvSkorAkhir);
         mbtnMenu = (Button) findViewById(R.id.btnMenu);
-
         setSkor();
 
         mbtnMenu.setOnClickListener(new View.OnClickListener() {
@@ -31,25 +30,20 @@ public class HasilSkoringActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(HasilSkoringActivity.this, Unit1Activity.class);
                 startActivity(i);
+
             }
         });
     }
 
-    public void setSkor(){
+    public void setSkor() {
         String activity = getIntent().getStringExtra("activity");
         String skorPilGan = getIntent().getStringExtra("skorAkhir");
         String skorEssay = getIntent().getStringExtra("skorAkhir2");
 
-        if(activity.equals("PilihanGanda")){
-            mtvHasilAkhir.setText("SKOR : "+skorPilGan);
-        }else{
-            mtvHasilAkhir.setText("SKOR : "+skorEssay);
+        if (activity.equals("PilihanGanda")) {
+            mtvHasilAkhir.setText("SKOR : " + skorPilGan);
+        } else {
+            mtvHasilAkhir.setText("SKOR : " + skorEssay);
         }
     }
-
-    public void onBackPressed(){
-        Toast.makeText(this, "Tidak bisa kembali, silahkan tekan menu", Toast.LENGTH_SHORT).show();
-
-    }
-
 }

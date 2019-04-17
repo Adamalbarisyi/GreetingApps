@@ -22,7 +22,7 @@ public class Unit3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Unit3Activity.this, MainActivity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
